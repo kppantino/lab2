@@ -1,83 +1,136 @@
 <!DOCTYPE html>
-
+<html>
 
 <head>
-    
     <title>About Me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: rgb(200, 200, 200);
+            font-family: Verdana, sans-serif;
+            background-color: #EFFAFD;
             margin: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        h2 {
-            color: #333;
+        h1, h2, h3 {
+            color: #4A8BDF;
         }
 
         p {
             text-align: justify;
             line-height: 1.5;
+            color: #333;
         }
 
-        img {
-            width: 300px;
-            height: 215px;
-            float: left;
-            margin-right: 20px;
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border: 2px solid #4A8BDF;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .info-box {
-            border: 2px solid #333;
             padding: 15px;
-            margin: 20px 0;
             text-align: left;
+            border-bottom: 2px solid #4A8BDF;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 10px;
+        }
+
+        .info-box:last-child {
+            border-bottom: none;
         }
 
         strong {
             font-weight: bold;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #A0006D;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            color: #333;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="info-box">
-        <h2>About Me</h2>
-        <img src="pickyla1.JPG" alt="Kyla's Picture">
-        <p>In the big picture of my life, I'm all about creating a sweet setup for myself and my fam - you know, the good life. I wanna be in a spot where I can throw a lifeline to others when I've got the means. But, above all, I'm on this journey to figure out what the heck I'm really here for, my true purpose.<br>
-            I want to be in a place where I can explore different countries without worrying about the bill. No budget constraints, just soaking up the world. Oh, and besides all that deep stuff, I'm all about the arts. I love painting, designing, and making tunes, my escape from reality.</p>
-    </div>
+    <div class="main-container">
+        <div class="info-box">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="pickyla1.JPG" alt="Kyla's Picture">
+                </div>
+                <div class="profile-name">Hi there! I'm Kyla Amor P. Pantino</div>
+            </div>
+            <p>In the big picture of my life, I'm all about creating a sweet setup for myself and my fam - you know, the good life. I wanna be in a spot where I can throw a lifeline to others when I've got the means. But, above all, I'm on this journey to figure out what the heck I'm really here for, my true purpose.<br>
+               <br>
+               I want to be in a place where I can explore different countries without worrying about the bill. No budget constraints, just soaking up the world. Oh, and besides all that deep stuff, I'm all about the arts. I love painting, designing, and making tunes, my escape from reality.</p>
+        </div>
 
-    <div class="info-box">
-        <h2>Kyla Amor P. Pantino</h2>
-        <p>Age: 19<br>
-            Birthdate: February 24, 2004</p>
-    </div>
+        <div class="info-box">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Playing Genshin Impact</li>
+                <li>Playing different sports such as volleyball and badminton, and biking</li>
+                <li>Binge-watching series and movies</li>
+                <li>Coffee shop hopping</li>
+            </ul>
+        </div>
 
-    <div class="info-box">
-        <h2>Hobbies & Interests</h2>
-        <p>-Playing Genshin Impact</p>
-        <p>-Playing different sports such as volleyball and badminton, biking</p>
-        <p>-Binge-watching series and movies</p>
-        <p>-Coffee shop hopping</p>
-    </div>
+        <div class="info-box">
+            <h2>Education</h2>
+            <p><strong>High School:</strong> Information and Communication Technology High School in the City of San Fernando, Pampanga</p>
+            <p><strong>Course:</strong> Bachelor of Science in Information Technology with Specialization in Mobile and Internet Technology</p>
+        </div>
 
-    <div class="info-box">
-        <h2>Education</h2>
-        <p><strong>High School:</strong> Information and Communication Technology High School in the City of San Fernando, Pampanga</p>
-        <p><strong>Course:</strong> Bachelor of Science in Information Technology with Specialization in Mobile and Internet Technology</p>
-    </div>
+        <div class="info-box">
+            <h2>Why IT?</h2>
+            <p>I chose this course but also with the influence of relatives who work in the same field, and I enjoy learning about technological trends.</p>
+        </div>
 
-    <div class="info-box">
-        <h2>Why IT?</h2>
-        <p>I chose this course but also with the influence of relatives who work in the same field, and I enjoy learning about technological trends.</p>
-    </div>
-
-    <div class="info-box">
-        <h2>IT Experience (Programming)</h2>
-        <p>-Basic Python, Java, Android Studio, HTML, CSS, Javascript</p>
+        <div class="info-box">
+            <h2>IT Experience (Programming)</h2>
+            <ul>
+                <li>Basic Python, Java, Android Studio, HTML, CSS, Javascript</li>
+            </ul>
+        </div>
     </div>
 
 </body>

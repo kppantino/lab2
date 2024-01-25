@@ -5,106 +5,151 @@
     <title>About Me</title>
     <style>
         body {
-            font-family: Verdana, sans-serif;
-            background-color: #EFFAFD;
+            font-family: Cambria, serif;
+            background-color: #DDD0C8;
             margin: 20px;
-            text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
+			align-items: center;
+            justify-content: center;
         }
 
         h1, h2, h3 {
-            color: #4A8BDF;
+            color: #323232;
         }
 
         p {
             text-align: justify;
             line-height: 1.5;
-            color: #333;
+            color: #323232;
         }
 
-        .main-container {
-            max-width: 900px;
+        .main-box {
+            max-width: 800px;
             margin: 0 auto;
-            background-color: #FFFFFF;
-            border: 2px solid #4A8BDF;
-            border-radius: 10px;
+            background-color: #DDD0C8;
             overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			float:left;
         }
 
         .info-box {
             padding: 15px;
             text-align: left;
-            border-bottom: 2px solid #4A8BDF;
-			margin-left: 20px;
-			margin-right: 20px;
-			margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+		
+		.intro-name1 {
+			text-align: left;
+			line-height:normal;
+			color:#323232;
+			float:left;
+			font-size: 19px;
+		}
+		
+		.intro-name2 {
+			text-align: left;
+			line-height:normal;
+			color:#323232;
+			float:left;
+			font-size: 24px;
+		
+		}
+		
+		.intro-name3 {
+			text-align: left;
+			line-height:normal;
+			color:#323232;
+			float:left;
+			font-size: 22px;
+		}
+		
+	
+		.intro {
+			align-items: stretch;
+		}
+		
+		.Hob-box, .skill-box {
+            text-align: left;
+			
         }
 
-        .info-box:last-child {
-            border-bottom: none;
+		
+		.interests-container {
+            display: flex;
+            justify-content: space-between;
         }
 
         strong {
             font-weight: bold;
         }
-
-        .profile-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
+		
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin: 20px;
             overflow: hidden;
+			float:left;
         }
 
         .profile-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+
         }
 
         .profile-name {
             font-size: 24px;
             font-weight: bold;
             color: #A0006D;
+			margin: 20px;
         }
 
         ul {
-            list-style-type: circle;
+            list-style-type:circle;
             padding: 0;
             margin: 0;
         }
 
         ul li {
-            color: #333;
+            color: #323232;
         }
     </style>
 </head>
 
-<body>
+	
 
-    <div class="main-container">
+<body>
+	<div class="intro">
+		<div class="profile-image">
+			<img src="pickyla1.JPG" alt="Kyla's Picture">
+		</div>
+		<div>
+			<p class="intro-name1">Hi there!</p>
+			<br>
+			<p class="intro-name2">I'm <strong>Kyla Amor Pantino</strong></p>
+			<br>
+			<p class="intro-name3"><strong>19, IT student in APC</strong></p>
+		</div>
+	</div>
+	
+
+    <div class="main-box">
         <div class="info-box">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="pickyla1.JPG" alt="Kyla's Picture">
-                </div>
-                <div class="profile-name">Hi there! I'm Kyla Amor P. Pantino</div>
-            </div>
-            <p>In the big picture of my life, I'm all about creating a sweet setup for myself and my fam - you know, the good life. I wanna be in a spot where I can throw a lifeline to others when I've got the means. But, above all, I'm on this journey to figure out what the heck I'm really here for, my true purpose.<br>
+            <p>I am Kyla Amor Perez Pantino, a 19-year-old IT student in Asia Pacific College. I live in Mexico, Pampanga and studied high school in Information and Communication Technology High School in San Fernando. I am currently enrolled with the course of Bachelor of Science in Information Technology with Specialization in Mobile and Internet Technology. 
                <br>
-               I want to be in a place where I can explore different countries without worrying about the bill. No budget constraints, just soaking up the world. Oh, and besides all that deep stuff, I'm all about the arts. I love painting, designing, and making tunes, my escape from reality.</p>
+              In the big picture of my life, I'm all about creating a sweet setup for myself . I wanna be in a spot where I can throw a lifeline to others when I've got the means. But, above all, I'm on this journey to figure out why I'm really here, my true purpose. Also, I love painting, designing, and making tunes, that’s why I love designing apps and websites.</p>
         </div>
 
-        <div class="info-box">
+        
+    </div>
+	
+	<div class="interests-container">
+        <div class="Hob-box">
             <h2>Hobbies & Interests</h2>
             <ul>
                 <li>Playing Genshin Impact</li>
@@ -114,24 +159,20 @@
             </ul>
         </div>
 
-        <div class="info-box">
-            <h2>Education</h2>
-            <p><strong>High School:</strong> Information and Communication Technology High School in the City of San Fernando, Pampanga</p>
-            <p><strong>Course:</strong> Bachelor of Science in Information Technology with Specialization in Mobile and Internet Technology</p>
-        </div>
-
-        <div class="info-box">
-            <h2>Why IT?</h2>
-            <p>I chose this course but also with the influence of relatives who work in the same field, and I enjoy learning about technological trends.</p>
-        </div>
-
-        <div class="info-box">
-            <h2>IT Experience (Programming)</h2>
+        <div class="skill-box">
+            <h2>IT Experience</h2>
             <ul>
-                <li>Basic Python, Java, Android Studio, HTML, CSS, Javascript</li>
+                <li>Basic Python</li>
+                <li>Java</li>
+                <li>Android Studio</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
             </ul>
         </div>
     </div>
+	<div class="gal-box">
+		<h1>Gallery</h1>
 
 </body>
 

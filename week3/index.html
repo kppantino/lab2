@@ -3,9 +3,10 @@
 
 <head>
     <title>About Me</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
-            font-family: Cambria, serif;
+            font-family: Garamond, serif;
             background-color: #DDD0C8;
             margin: 20px;
             display: flex;
@@ -13,6 +14,10 @@
 			align-items: center;
             justify-content: center;
         }
+		
+		.icon {
+		
+		}
 
         h1, h2, h3 {
             color: #323232;
@@ -116,6 +121,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
 			padding-top:5px;
+			transition: transform .2s;
 			margin-bottom:50px;
         }
 
@@ -131,11 +137,20 @@
 			margin-top:50px;
 		}
 		
+		.gal-box:hover {
+			transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		}	
+		
         strong {
             font-weight: bold;
         }
 		
-        
+		.icon {
+			width: 50px;
+            height: 50px;
+		
+		}
+       
 
         ul {
             list-style-type:circle;
@@ -152,6 +167,7 @@
 	
 
 <body>
+	<img src="favicon.png" alt="icon" class="icon">	
 	<div class="intro">
             <div class="profile-image">
                 <img src="pickyla1.JPG" alt="Kyla's Picture">
@@ -165,10 +181,12 @@
 
     <div class="main-box">
         <div class="info-box">
-            <p>I am Kyla Amor Perez Pantino, a 19-year-old IT student in Asia Pacific College. I live in Mexico, Pampanga and studied high school in Information and Communication Technology High School in San Fernando. I am currently enrolled with the course of Bachelor of Science in Information Technology with Specialization in Mobile and Internet Technology. 
-               <br>
-              In the big picture of my life, I'm all about creating a sweet setup for myself . I wanna be in a spot where I can throw a lifeline to others when I've got the means. But, above all, I'm on this journey to figure out why I'm really here, my true purpose. Also, I love painting, designing, and making tunes, that’s why I love designing apps and websites.</p>
-        </div>
+            <p>I am Kyla Amor Perez Pantino, a 19-year-old IT student in Asia Pacific College. I live in Mexico, Pampanga and studied high school in Information and Communication Technology High School in San Fernando. 
+			I am currently enrolled with the course of Bachelor of Science in Information Technology with Specialization in Mobile and Internet Technology. 
+            <br>
+            In the big picture of my life, I'm all about creating a sweet setup for myself . I wanna be in a spot where I can throw a lifeline to others when I've got the means.
+			But, above all, I'm on this journey to figure out why I'm really here, my true purpose. Also, I love painting, designing, and making tunes, that’s why I love designing apps and websites.</p>
+	   </div>
 
         
     </div>

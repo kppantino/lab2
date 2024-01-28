@@ -3,7 +3,7 @@
 
 <head>
     <title>About Me</title>
-	<link rel="icon" type="image/x-icon" href="favic.png">
+    <link rel="icon" type="image/x-icon" href="favic.png">
     <style>
         body {
             font-family: Cambria, serif;
@@ -11,11 +11,11 @@
             margin: 20px;
             display: flex;
             flex-direction: column;
-			align-items: center;
+            align-items: center;
             justify-content: center;
         }
-		
-		.icon {
+
+        .icon {
             width: 50px;
             height: 50px;
             position: fixed;
@@ -24,93 +24,46 @@
             z-index: 1000;
         }
 
-
         p {
             text-align: justify;
             line-height: 1.5;
             color: #323232;
         }
 
-        .main-box {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #DDD0C8;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			float:left;
-			text-indent:50px;
-			margin-top:150px;
-			align-items: flex-start;
-        }
-
-        .info-box {
-            padding: 10px;
-            text-align: left;
-            margin-left: 20px;
-            margin-right: 20px;
-            margin-bottom: 10px;
-			display: flex;
-			align-items: flex-start;
-        }
-		
-		.intro-name1 {
+        .intro-name1 {
             text-align: left;
             line-height: normal;
             color: #323232;
             font-size: 40px;
-			float:right;
+            float: right;
         }
 
         .intro {
             display: flex;
             align-items: center;
             justify-content: space-between;
-			max-width: 800px;
-            margin-top:100px;
+            max-width: 800px;
+            margin-top: 100px;
+            margin-bottom: 80px;
             background-color: #DDD0C8;
-			padding-right: 80px;
-            
+            padding-right: 80px;
+			
+
         }
-		
-		.intro-pic img{
-			width:200px;
-			height:auto;
-			border-radius: 50%;
-		}
-		
-		.intro-pic {
-            float: right;
-            margin: 20px;
-            overflow: hidden;
-        }
-		
-		.clearfix::after {
-			content: "";
-			clear: both;
-			display: table;
-		}
-		
-		.info-box .intro-pic {
-			width: 150px;
-			height: 150px;
-			margin-right: 20px;
-		}
-		
+
         .profile-image {
             width: 250px;
             height: 250px;
             border-radius: 50%;
             margin: 20px;
             overflow: hidden;
-			float:left;
-			
+            float: left;
         }
 
         .profile-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-			
         }
 
         .intro-text {
@@ -122,122 +75,143 @@
             margin: 0;
         }
 
+        .info-box {
+			max-width: 800px;
+            padding: 10px;
+            text-align: left;
+            margin:40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+        }
+		.info-box p {
+			text-indent:50px;
+		}
 
-		.interests-container {
-            max-width: 800px;
+        .interests-container {
             display: flex;
             justify-content: space-evenly;
             overflow: hidden;
-			margin-top:60px;
+
         }
 
-        .Hob-box, .skill-box {
+        .Hob-box,
+        .skill-box {
             text-align: left;
             overflow: hidden;
             flex: 1;
             margin: 30px;
-            padding: 10px;
-			padding-left:45px;
-			padding-right:45px;
-			border-radius:10px;
+            padding: 15px;
+            padding-left: 45px;
+            padding-right: 45px;
+            border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-			background-color:#A9927D;
+            background-color: #A9927D;
         }
 
         .Hob-box ul,
         .skill-box ul {
             padding: 10px;
         }
-		
-		
-		.gal-box {
+
+        .gal-box {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-			padding-top:5px;
-			margin-bottom:50px;
+            padding-top: 5px;
+            margin-bottom: 50px;
         }
 
         .gal-box img {
             max-width: 200px;
             margin: 10px;
             border-radius: 5px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2s);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2s);
         }
-		
-		.pics {
-			transition: transform .2s;
-		}
-		
-		
-		.gal-box img:hover {
-			transform: scale(1.4);
-		}
 
-		
-		.gal-text {
-			text-align:center;
-			margin-top:50px;
-		}
-		
-		.pics:hover {
-			transform: scale(1.0);
-		}	
-		
+        .pics {
+            transition: transform .2s;
+        }
+
+        .gal-box img:hover {
+            transform: scale(1.4);
+        }
+
+        .gal-text {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .pics:hover {
+            transform: scale(1.0);
+        }
+
         strong {
             font-weight: bold;
         }
-		   
 
         ul {
-            list-style-type:circle;
+            list-style-type: circle;
             padding: 0;
             margin: 0;
+			color: #FFFFFF;
         }
 
         ul li {
-            color: #323232;
+            color: #FFFFFF;
         }
+		
+		hr {
+			border: 0;
+			border-top: 2px solid #777E5C;
+			margin: 20px 0;
+			width: 80%;
+		}
     </style>
 </head>
 
-	
-
 <body>
-	<img src="favic.png" alt="icon" class="icon">	
-	
-	<div class="intro">
-            <div class="profile-image">
-                <img src="pickyla1.JPG" alt="Kyla's Picture">
-            </div>
-            <div class="intro-text">
-                <p class="intro-name1">Hi there!<br>I'm <strong>Kyla Amor Pantino</strong><br><strong>19, IT student in APC</strong></p>
-            </div>
+    <img src="favic.png" alt="icon" class="icon">
+
+    <div class="intro">
+        <div class="profile-image">
+            <img src="pickyla1.JPG" alt="Kyla's Picture">
         </div>
-	</div>
-	
-
-    <div class="main-box">
-        <div class="info-box">
-            <p>I am Kyla Amor Perez Pantino, a 19-year-old IT student in Asia Pacific College. I live in Mexico, Pampanga and studied high school in Information and Communication Technology High School in San Fernando. 
-			I am currently enrolled with the course of Bachelor of Science in Information Technology with Specialization in Mobile and Internet Technology. 
-            <br>
-            In the big picture of my life, I'm all about creating a sweet setup for myself . I wanna be in a spot where I can throw a lifeline to others when I've got the means.
-			But, above all, I'm on this journey to figure out why I'm really here, my true purpose. Also, I love painting, designing, and making tunes, that’s why I love designing apps and websites.</p>
-			
-			<img src="introdes.png" alt="icon" class="intro-pic">
-			
-		</div>
-			
-
-        
+        <div class="intro-text">
+            <p class="intro-name1">Hi there!
+			<br>I'm <strong>Kyla Amor Pantino</strong>
+			<br><strong>19, IT student in APC</strong></p>
+        </div>
     </div>
+
+
+	<hr>
 	
-	<div class="interests-container" style="color:#DFE0DC;">
-        <div class="Hob-box" style="color:#DFE0DC;">
+	
+    <div class="info-box">
+
+        <p>I am Kyla Amor Perez Pantino, a 19-year-old IT student in Asia Pacific College. 
+			I live in Mexico, Pampanga and studied high school in Information and Communication 
+			Technology High School in San Fernando.
+            I am currently enrolled with the course of Bachelor of Science in Information Technology 
+			with Specialization in Mobile and Internet Technology.
+            <br> 
+			<br>
+			In the big picture of my life, I'm all about creating a sweet setup for myself. 
+			I wanna be in a spot where I can throw a lifeline to others when I've got the means.
+            But, above all, I'm on this journey to figure out why I'm really here, my true purpose. 
+			Also, I love painting, designing, and making tunes, that’s why I love designing apps and websites.</p>
+
+    </div>
+
+	<hr>
+	
+    <div class="interests-container" style="color:#FFFFFF;">
+        <div class="Hob-box">
             <h2>Hobbies & Interests</h2>
-			
-            <ul style="color:#DFE0DC;">
+
+            <ul>
                 <li>Playing Genshin Impact</li>
                 <li>Playing different sports such as volleyball <br> and badminton, and biking</li>
                 <li>Binge-watching series and movies</li>
@@ -245,10 +219,10 @@
             </ul>
         </div>
 
-        <div class="skill-box" style="color:#DFE0DC;">
+        <div class="skill-box">
             <h2>IT Experience</h2>
-			
-            <ul >
+
+            <ul>
                 <li>Basic Python</li>
                 <li>Java</li>
                 <li>Android Studio</li>
@@ -259,15 +233,16 @@
         </div>
     </div>
 	
-	<h1 class="gal-text">Gallery</h1>
-	
-	<div class="gal-box">
-		<img src="gal1.JPG" alt="Kyla's Picture1" class="pics">
-		<img src="gal2.JPG" alt="Kyla's Picture2" class="pics">
-		<img src="gal4.JPG" alt="Kyla's Picture4" class="pics">
-		<img src="gal3.JPG" alt="Kyla's Picture3" class="pics">
-		
-	</div>
+	<hr>
+
+    <h1 class="gal-text">Gallery</h1>
+
+    <div class="gal-box">
+        <img src="gal1.JPG" alt="Kyla's Picture1" class="pics">
+        <img src="gal2.JPG" alt="Kyla's Picture2" class="pics">
+        <img src="gal4.JPG" alt="Kyla's Picture4" class="pics">
+        <img src="gal3.JPG" alt="Kyla's Picture3" class="pics">
+    </div>
 
 </body>
 
